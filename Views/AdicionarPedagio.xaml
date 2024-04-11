@@ -6,7 +6,7 @@
         <StackLayout Margin="8">
             <Grid ColumnDefinitions="*, *" RowDefinitions="*, *">
                 
-           
+                <Label x:Name=""
                 
             </Grid>
         </StackLayout>
