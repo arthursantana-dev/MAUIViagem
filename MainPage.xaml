@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUIViagem.MainPage">
+
+    <ContentPage.Resources>
+
+        <Style TargetType="Label">
+            <Setter Property="VerticalTextAlignment" Value="Center"/>
+            <Setter Property="VerticalOptions" Value="FillAndExpand"/>
+        </Style>
+
+    </ContentPage.Resources>
+
+
+    <ContentPage.Content>
+        <StackLayout Margin="8">
+
+            <Grid RowDefinitions="*, *, *, *, *" ColumnDefinitions="200, *" Margin="0, 0, 0, 120">
+
+                <Label Grid.Row="0" Grid.Column="0" Text="Origem:"/>
+                <Entry Grid.Row="0" Grid.Column="1" x:Name="textOrigem"/>
+
+                <Label Grid.Row="1" Grid.Column="0" Text="Destino:"/>
+                <Entry Grid.Row="1" Grid.Column="1" x:Name="textDestino"/>
+
+                <Label Grid.Row="2" Grid.Column="0" Text="Distância:"/>
+                <Entry Grid.Row="2" Grid.Column="1" x:Name="textDistancia"/>
+
+                <Label Grid.Row="3" Grid.Column="0" Text="Rendimento:"/>
+                <Entry Grid.Row="3" Grid.Column="1" x:Name="textRendimento"/>
+
+                <Label Grid.Row="4" Grid.Column="0" Text="Preço:"/>
+                <Entry Grid.Row="4" Grid.Column="1" x:Name="textPreco"/>
+
+            </Grid>
+
+        <Button Margin="0,0,0,20"  x:Name="buttonCalcular" Text="Calcular" Clicked="buttonCalcular_Clicked"/>
+            <Button Margin="0,0,0,20" x:Name="buttonAddPedagio" Text="Adicionar Pedágio" Clicked="buttonAddPedagio_Clicked"/>
+            <Button Margin="0,0,0,20" x:Name="buttonListPedagios" Text="Listar Pedágios" Clicked="buttonListPedagios_Clicked"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+
+    
+
+</ContentPage>
