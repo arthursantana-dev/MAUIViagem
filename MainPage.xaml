@@ -16,28 +16,28 @@
     <ContentPage.Content>
         <StackLayout Margin="8">
 
-            <Grid RowDefinitions="*, *, *, *, *" ColumnDefinitions="200, *" Margin="0, 0, 0, 120">
+            <Grid RowDefinitions="*, *, *, *, *" ColumnDefinitions="*, 4*" Margin="0, 0, 0, 120">
 
                 <Label Grid.Row="0" Grid.Column="0" Text="Origem:"/>
-                <Entry Grid.Row="0" Grid.Column="1" x:Name="textOrigem"/>
+                <Entry Grid.Row="0" Grid.Column="1" x:Name="textOrigem" BindingContext="Origem"/>
 
                 <Label Grid.Row="1" Grid.Column="0" Text="Destino:"/>
-                <Entry Grid.Row="1" Grid.Column="1" x:Name="textDestino"/>
+                <Entry Grid.Row="1" Grid.Column="1" x:Name="textDestino" BindingContext="Destino"/>
 
                 <Label Grid.Row="2" Grid.Column="0" Text="Distância:"/>
-                <Entry Grid.Row="2" Grid.Column="1" x:Name="textDistancia"/>
+                <Entry Grid.Row="2" Grid.Column="1" x:Name="textDistancia" BindingContext="Distancia"/>
 
                 <Label Grid.Row="3" Grid.Column="0" Text="Rendimento:"/>
-                <Entry Grid.Row="3" Grid.Column="1" x:Name="textRendimento"/>
+                <Entry Grid.Row="3" Grid.Column="1" x:Name="textRendimento" BindingContext="Rendimento"/>
 
                 <Label Grid.Row="4" Grid.Column="0" Text="Preço:"/>
-                <Entry Grid.Row="4" Grid.Column="1" x:Name="textPreco"/>
+                <Entry Grid.Row="4" Grid.Column="1" x:Name="textPreco" BindingContext="Preco"/>
 
             </Grid>
 
         <Button Margin="0,0,0,20"  x:Name="buttonCalcular" Text="Calcular" Clicked="buttonCalcular_Clicked"/>
-            <Button Margin="0,0,0,20" x:Name="buttonAddPedagio" Text="Adicionar Pedágio" Clicked="buttonAddPedagio_Clicked"/>
-            <Button Margin="0,0,0,20" x:Name="buttonListPedagios" Text="Listar Pedágios" Clicked="buttonListPedagios_Clicked"/>
+        <Button Margin="0,0,0,20" x:Name="buttonAddPedagio" Text="Adicionar Pedágio" Clicked="buttonAddPedagio_Clicked"/>
+        <Button Margin="0,0,0,20" x:Name="buttonListPedagios" Text="Listar Pedágios" Clicked="buttonListPedagios_Clicked"/>
 
         </StackLayout>
     </ContentPage.Content>

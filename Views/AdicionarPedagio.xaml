@@ -5,9 +5,12 @@
     <ContentPage.Content>
         <StackLayout Margin="8">
             <Grid ColumnDefinitions="*, *" RowDefinitions="*, *">
+
+                <Label Text="Local" Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="textValor" Grid.Row="0" Grid.Column="1" />
+               
                 
-                <Label x:Name=""
-                
+
             </Grid>
         </StackLayout>
     </ContentPage.Content>

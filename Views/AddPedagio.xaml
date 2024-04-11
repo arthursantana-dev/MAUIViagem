@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUIViagem.Views.AddPedagio"
+             Title="AddPedagio">
+    <VerticalStackLayout Margin="8">
+        <Grid ColumnDefinitions="*, 4*" RowDefinitions="*, *">
+
+            <Label Text="Local:" Grid.Column="0" Grid.Row="0"/>
+            <Entry x:Name="textLocal" Grid.Column="1" Grid.Row="0" BindingContext="Local"/>
+
+            <Label Text="Valor:" Grid.Column="0" Grid.Row="1"/>
+            <Entry x:Name="textValor" Grid.Column="1" Grid.Row="1" BindingContext="Valor"/>
+
+        </Grid>
+
+        <Button x:Name="buttonAddPedagio" Text="AddPEdagio" Clicked="buttonAddPedagio_Clicked"/>
+        <Button Clicked="Button_Clicked"/>
+    </VerticalStackLayout>
+</ContentPage>
