@@ -3,8 +3,30 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MAUIViagem.Views.ConfirmarViagem"
              Title="ConfirmarViagem">
-    <VerticalStackLayout>
-        <Label Text="TESTE"/>
-        <Label Text="{Binding Origem}"/>
-    </VerticalStackLayout>
+     <ScrollView><StackLayout>
+       
+            
+        
+        
+        <Label Text="Origem"/>
+        <Entry IsReadOnly="True" x:Name="textOrigem" Margin="0,0,0,40"/>
+
+        <Label Text="Destino"/>
+        <Entry IsReadOnly="True" x:Name="textDestino" Margin="0,0,0,40"/>
+
+        <Label Text="Distância"/>
+        <Entry IsReadOnly="True" x:Name="textDistancia" Margin="0,0,0,40"/>
+
+        <Label Text="Rendimento"/>
+        <Entry IsReadOnly="True" x:Name="textRendimento" Margin="0,0,0,40"/>
+
+        <Label Text="Preco"/>
+        <Entry IsReadOnly="True" x:Name="textPreco" Margin="0,0,0,40"/>
+
+        <Label Text="Soma dos pedágios:"/>
+        <Entry IsReadOnly="True" x:Name="textSomaPedagio" Margin="0,0,0,40"/>
+
+        <Button x:Name="buttonConfirmarViagem" Text="Calcular Custo" Clicked="buttonConfirmarViagem_Clicked" />
+        <Button x:Name="buttonNovaViagem" Text="Calcular Nova viagem" Clicked="buttonNovaViagem_Clicked"/>
+    </StackLayout></ScrollView>
 </ContentPage>

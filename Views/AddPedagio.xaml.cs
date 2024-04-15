@@ -20,16 +20,13 @@ public partial class AddPedagio : ContentPage
 			};
 
 
-            await DisplayAlert("Deu bom", "Deu bom", "OK");
 			await App.Db.Insert(p);
-			
+            await DisplayAlert("Deu bom", "Deu bom", "OK");
+
 
         } catch (Exception ex)
 		{
 			await DisplayAlert("a", ex.Message, "OK");
-		}
-		{
-
 		}
     }
 

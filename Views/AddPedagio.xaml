@@ -14,7 +14,7 @@
 
         </Grid>
 
-        <Button x:Name="buttonAddPedagio" Text="AddPEdagio" Clicked="buttonAddPedagio_Clicked"/>
+        <Button x:Name="buttonAddPedagio" Text="AddPedagio" Clicked="buttonAddPedagio_Clicked"/>
         <Button Clicked="Button_Clicked"/>
     </VerticalStackLayout>
 </ContentPage>

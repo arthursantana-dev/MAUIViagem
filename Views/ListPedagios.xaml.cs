@@ -20,8 +20,11 @@ public partial class ListPedagios : ContentPage
 
 			foreach(Pedagio p in getAllResult)
 			{
-				OclistPedagios.Add(p);
-			}
+				if(p.Id != 1)
+				{
+					OclistPedagios.Add(p);
+                }
+            }
 		}
 	}
 }
